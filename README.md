@@ -1,4 +1,4 @@
-# Chia Client - Dart
+# Chia Client
 
 A simple Dart Chia client.
 
@@ -7,7 +7,7 @@ Currently supports all the 1.3.5 full node endpoints.
 ## Generate Models
 
 ```console
-dart run build_runner build --delete-conflicting-outputs
+$ dart run build_runner build --delete-conflicting-outputs
 Building package executable... (5.3s)
 Built build_runner:build_runner.
 [INFO] Generating build script completed, took 426ms
@@ -21,7 +21,7 @@ Built build_runner:build_runner.
 ## Build and Test
 
 ```console
-dart test
+$ dart test
 Building package executable... (5.1s)
 Built test:test.
 00:00 +22: All tests passed!
@@ -33,8 +33,8 @@ Built test:test.
 final fullNodeService = FullNodeService(
     RpcClient(
           uri: Uri(scheme: 'https', host: 'localhost', port: 8555),
-          certByteData: <fullNodeCertBytes>
-          keyByteData: <fullNodeKeyBytes>
+          certByteData: <fullNodeCertByteData>
+          keyByteData: <fullNodeKeyByteData>
     ),
 );
 ```
