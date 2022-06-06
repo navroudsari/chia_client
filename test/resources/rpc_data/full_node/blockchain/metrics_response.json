@@ -1,0 +1,8 @@
+{
+  "metrics": {
+    "compact_blocks": 275,
+    "hint_count": 21200,
+    "uncompact_blocks": 1024037
+  },
+  "success": true
+}

@@ -1,0 +1,42 @@
+{
+  "additions": [
+    {
+      "coin": {
+        "amount": 1750000000000,
+        "parent_coin_info": "0xae83525ba8d1dd3f09b277de18ca3e43000000000000000000000000000f9db3",
+        "puzzle_hash": "0x3140ca9a6599285688263f44d443381bee53322bb7ae89230a48ae1c93391e06"
+      },
+      "coinbase": true,
+      "confirmed_block_index": 1023416,
+      "spent": false,
+      "spent_block_index": 0,
+      "timestamp": 1653481715
+    },
+    {
+      "coin": {
+        "amount": 250000000000,
+        "parent_coin_info": "0xfc0af20d20c4b3e92ef2a48bd291ccb2000000000000000000000000000f9db5",
+        "puzzle_hash": "0xae5286dc6640f2ed06676e5045f8ba4d1377efee983d00399a0477454178af80"
+      },
+      "coinbase": true,
+      "confirmed_block_index": 1023416,
+      "spent": false,
+      "spent_block_index": 0,
+      "timestamp": 1653481715
+    },
+    {
+      "coin": {
+        "amount": 1750000000000,
+        "parent_coin_info": "0xae83525ba8d1dd3f09b277de18ca3e43000000000000000000000000000f9db4",
+        "puzzle_hash": "0x3140ca9a6599285688263f44d443381bee53322bb7ae89230a48ae1c93391e06"
+      },
+      "coinbase": true,
+      "confirmed_block_index": 1023416,
+      "spent": false,
+      "spent_block_index": 0,
+      "timestamp": 1653481715
+    }
+  ],
+  "removals": [],
+  "success": true
+}

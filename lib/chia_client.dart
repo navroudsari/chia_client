@@ -1,5 +1,5 @@
 library chia_client;
 
-export 'src/common/chia_options.dart';
-export 'src/full_node/full_node.dart';
-export 'src/full_node/full_node_service.dart';
+export 'package:chia_client/src/model/chia_models.dart';
+export 'package:chia_client/src/model/rpc_models.dart';
+export 'package:chia_client/src/services/full_node/full_node_service.dart';

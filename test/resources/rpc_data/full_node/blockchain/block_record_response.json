@@ -1,0 +1,36 @@
+{
+  "block_record": {
+    "challenge_block_info_hash": "0x9fef17e1d4444103a83fcad003a81fa9247390357bc8706137f1980f4135d43c",
+    "challenge_vdf_output": {
+      "data": "0x01005515c547e6a868f439fd4ea0996f427d5595b7d17e25820c2d6e5ea06e18b366a8dfd52f889d155aba8880207623dd2897570552c94319c82cf445afc9e26e019bd3e89d36ba57104c69149d3fbc56c9b0028f735ab43b309aacf79c388045000200"
+    },
+    "deficit": 15,
+    "farmer_puzzle_hash": "0x3d8765d3a597ec1d99663f6c9816d915b9f68613ac94009884c4addaefcce6af",
+    "fees": 0,
+    "finished_challenge_slot_hashes": [
+      "0xae83525ba8d1dd3f09b277de18ca3e43fc0af20d20c4b3e92ef2a48bd291ccb2"
+    ],
+    "finished_infused_challenge_slot_hashes": null,
+    "finished_reward_slot_hashes": [
+      "0xae83525ba8d1dd3f09b277de18ca3e43fc0af20d20c4b3e92ef2a48bd291ccb2"
+    ],
+    "header_hash": "0xba3be06d4da45be6fdd323ddde41cbd20fe24d87e941e11270a871d3add9208f",
+    "height": 0,
+    "infused_challenge_vdf_output": null,
+    "overflow": false,
+    "pool_puzzle_hash": "0xd23da14695a188ae5708dd152263c4db883eb27edeb936178d4d988b8f3ce5fc",
+    "prev_hash": "0xae83525ba8d1dd3f09b277de18ca3e43fc0af20d20c4b3e92ef2a48bd291ccb2",
+    "prev_transaction_block_hash": "0xae83525ba8d1dd3f09b277de18ca3e43fc0af20d20c4b3e92ef2a48bd291ccb2",
+    "prev_transaction_block_height": 0,
+    "required_iters": 562529,
+    "reward_claims_incorporated": [],
+    "reward_infusion_new_challenge": "0x2ceab974410ae82175eeb614b73d39dd24d4cc7442d3efdf0638114db960984e",
+    "signage_point_index": 29,
+    "sub_epoch_summary_included": null,
+    "sub_slot_iters": 134217728,
+    "timestamp": 1634162689,
+    "total_iters": 67671393,
+    "weight": 30
+  },
+  "success": true
+}

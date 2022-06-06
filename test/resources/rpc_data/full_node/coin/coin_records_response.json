@@ -1,0 +1,17 @@
+{
+  "coin_records": [
+    {
+      "coin": {
+        "amount": 1000000000000,
+        "parent_coin_info": "0x219f68489bf94768415a70ceee0c2364ecc6360368bfd4006d6462ad7d599862",
+        "puzzle_hash": "0xfab3ad7fb8053836977cce2250d4f82c6fe56851ae70b2ada7c2cfff84a2ab7d"
+      },
+      "coinbase": false,
+      "confirmed_block_index": 1024355,
+      "spent": false,
+      "spent_block_index": 0,
+      "timestamp": 1653499415
+    }
+  ],
+  "success": true
+}

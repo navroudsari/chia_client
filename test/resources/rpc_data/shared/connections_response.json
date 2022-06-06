@@ -1,0 +1,20 @@
+{
+  "connections": [
+    {
+      "bytes_read": 5941107,
+      "bytes_written": 724,
+      "creation_time": 1653497818.5182562,
+      "last_message_time": 1653497909.192152,
+      "local_port": 58444,
+      "node_id": "0x947813390c8f1070f12a68643c4e3da1717aaf2de0c7003e1dc61992be65c54c",
+      "peak_hash": "0x647445287c67358f7904e5ded8430debac75de385337f3604ac0aed048a8b913",
+      "peak_height": 1024270,
+      "peak_weight": 83665158196,
+      "peer_host": "testnet10-node.chia.net",
+      "peer_port": 58444,
+      "peer_server_port": 58444,
+      "type": 1
+    }
+  ],
+  "success": true
+}

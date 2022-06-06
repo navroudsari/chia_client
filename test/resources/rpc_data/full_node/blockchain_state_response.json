@@ -1,0 +1,52 @@
+{
+  "blockchain_state": {
+    "block_max_cost": 11000000000,
+    "difficulty": 219136,
+    "genesis_challenge_initialized": true,
+    "mempool_cost": 0,
+    "mempool_max_total_cost": 110000000000,
+    "mempool_min_fees": { "cost_5000000": 0 },
+    "mempool_size": 0,
+    "node_id": "90f2f023387a3842125ce336882b9e9805eed5ad99b4a5d181b3ecac901fffc4",
+    "peak": {
+      "challenge_block_info_hash": "0xb3d016d39d6c4e749a942bd0b014163dc873b71ed7fd79c184be9c5014e39de1",
+      "challenge_vdf_output": {
+        "data": "0x0100c434b1f5fbf0d7cb95511416807a44e9286bc5c6fcd013f01ebd366a19f4e044d960d638614a944a548aa72a410e7fe85d5ea664da7174811beb0f9dedb17372cf506c93649209ae4337393e27c931448790ae45f7f566142074b123c2a673890100"
+      },
+      "deficit": 13,
+      "farmer_puzzle_hash": "0xae5286dc6640f2ed06676e5045f8ba4d1377efee983d00399a0477454178af80",
+      "fees": null,
+      "finished_challenge_slot_hashes": null,
+      "finished_infused_challenge_slot_hashes": null,
+      "finished_reward_slot_hashes": null,
+      "header_hash": "0xabda6e1fed4d45d702bf9aa85020c142ad4c2f013d96a7c0507b88c7453597be",
+      "height": 1023840,
+      "infused_challenge_vdf_output": {
+        "data": "0x020062c06c909455c4e9fa64a48a984c6de93f38c12930c59e35a2f4b1f08c86cf9d00dd8950db03667bbfd404ef7e0203e91d0cf81bdf136c813a451ac06795370919f218ce50163a8b63a3ac0ee264f06f4fbb395704bdcd9eb7f9274f4d33c6080100"
+      },
+      "overflow": false,
+      "pool_puzzle_hash": "0x3140ca9a6599285688263f44d443381bee53322bb7ae89230a48ae1c93391e06",
+      "prev_hash": "0x7910bb4a2379919f498e1eee2e66370aca7024fb35fe75b9904267fa24de6993",
+      "prev_transaction_block_hash": null,
+      "prev_transaction_block_height": 1023838,
+      "required_iters": 955665,
+      "reward_claims_incorporated": null,
+      "reward_infusion_new_challenge": "0xfaf17e621284ccbe770b892b7f2e39c3de8985b4bb37ff23748b3647f652cc23",
+      "signage_point_index": 0,
+      "sub_epoch_summary_included": null,
+      "sub_slot_iters": 70778880,
+      "timestamp": null,
+      "total_iters": 2357119759633,
+      "weight": 83570929716
+    },
+    "space": 379227806719865,
+    "sub_slot_iters": 70778880,
+    "sync": {
+      "sync_mode": true,
+      "sync_progress_height": 1023840,
+      "sync_tip_height": 1024264,
+      "synced": false
+    }
+  },
+  "success": true
+}
