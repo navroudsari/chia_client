@@ -26,6 +26,3 @@ doc/api/
 # IDE's
 .vscode
 
-# generated files
-*.freezed.dart
-*.g.dart
