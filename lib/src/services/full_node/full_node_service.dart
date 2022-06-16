@@ -1,7 +1,5 @@
 import 'dart:convert';
 import 'package:chia_client/chia_client.dart';
-import 'package:chia_client/src/client/rpc_client.dart';
-import 'package:chia_client/src/model/rpc_models.dart';
 
 class FullNodeService {
   FullNodeService(this._client);
@@ -91,15 +89,15 @@ class FullNodeService {
   }
 
   Future<NetworkSpaceResponse> getNetworkSpace({
-    required String newerBlockHeaderHash,
-    required String olderBlockHeaderHash,
+    required String fromBlockHeaderHash,
+    required String toBlockHeaderHash,
   }) async {
     return _client.request<NetworkSpaceResponse>(
       command: 'get_network_space',
       requestBody: '''
       {
-        "newer_block_header_hash": "$newerBlockHeaderHash",
-        "older_block_header_hash": "$olderBlockHeaderHash"
+        "older_block_header_hash": "$fromBlockHeaderHash"
+        "newer_block_header_hash": "$toBlockHeaderHash",
       }''',
       jsonDecoder: NetworkSpaceResponse.fromJson,
     );
