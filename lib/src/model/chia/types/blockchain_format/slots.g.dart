@@ -14,8 +14,8 @@ _$_ChallengeChainSubSlot _$$_ChallengeChainSubSlotFromJson(
       infusedChallengeChainSubSlotHash:
           json['infused_challenge_chain_sub_slot_hash'] as String?,
       newDifficulty: json['new_difficulty'] as String?,
-      newSubSlotIters: json['new_sub_slot_iters'] as String?,
-      subepochSummaryHash: json['subepoch_summary_hash'] as String?,
+      newSubSlotIters: json['new_sub_slot_iters'] as int?,
+      subepochSummaryHash: json['subepoch_summary_hash'] as int?,
     );
 
 Map<String, dynamic> _$$_ChallengeChainSubSlotToJson(

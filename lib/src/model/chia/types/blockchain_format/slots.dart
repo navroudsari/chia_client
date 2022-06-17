@@ -11,8 +11,8 @@ class ChallengeChainSubSlot with _$ChallengeChainSubSlot {
     required VDFInfo challengeChainEndOfSlotVdf,
     String? infusedChallengeChainSubSlotHash,
     String? newDifficulty,
-    String? newSubSlotIters,
-    String? subepochSummaryHash,
+    int? newSubSlotIters,
+    int? subepochSummaryHash,
   }) = _ChallengeChainSubSlot;
 
   factory ChallengeChainSubSlot.fromJson(Map<String, dynamic> json) =>
