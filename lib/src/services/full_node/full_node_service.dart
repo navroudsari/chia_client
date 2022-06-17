@@ -96,8 +96,8 @@ class FullNodeService {
       command: 'get_network_space',
       requestBody: '''
       {
-        "older_block_header_hash": "$fromBlockHeaderHash"
-        "newer_block_header_hash": "$toBlockHeaderHash",
+        "older_block_header_hash": "$fromBlockHeaderHash",
+        "newer_block_header_hash": "$toBlockHeaderHash"
       }''',
       jsonDecoder: NetworkSpaceResponse.fromJson,
     );

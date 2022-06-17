@@ -16,10 +16,14 @@ _$_FullBlock _$$_FullBlockFromJson(Map<String, dynamic> json) => _$_FullBlock(
               json['foliage_transaction_block'] as Map<String, dynamic>),
       rewardChainBlock: RewardChainBlock.fromJson(
           json['reward_chain_block'] as Map<String, dynamic>),
-      rewardChainIpProof: VDFProof.fromJson(
-          json['reward_chain_ip_proof'] as Map<String, dynamic>),
-      rewardChainSpProof: VDFProof.fromJson(
-          json['reward_chain_sp_proof'] as Map<String, dynamic>),
+      rewardChainIpProof: json['reward_chain_ip_proof'] == null
+          ? null
+          : VDFProof.fromJson(
+              json['reward_chain_ip_proof'] as Map<String, dynamic>),
+      rewardChainSpProof: json['reward_chain_sp_proof'] == null
+          ? null
+          : VDFProof.fromJson(
+              json['reward_chain_sp_proof'] as Map<String, dynamic>),
       finishedSubSlots: (json['finished_sub_slots'] as List<dynamic>)
           .map((e) => e == null
               ? null
@@ -52,8 +56,8 @@ Map<String, dynamic> _$$_FullBlockToJson(_$_FullBlock instance) {
     'foliage': instance.foliage.toJson(),
     'foliage_transaction_block': instance.foliageTransactionBlock?.toJson(),
     'reward_chain_block': instance.rewardChainBlock.toJson(),
-    'reward_chain_ip_proof': instance.rewardChainIpProof.toJson(),
-    'reward_chain_sp_proof': instance.rewardChainSpProof.toJson(),
+    'reward_chain_ip_proof': instance.rewardChainIpProof?.toJson(),
+    'reward_chain_sp_proof': instance.rewardChainSpProof?.toJson(),
     'finished_sub_slots':
         instance.finishedSubSlots.map((e) => e?.toJson()).toList(),
     'infused_challenge_chain_ip_proof':

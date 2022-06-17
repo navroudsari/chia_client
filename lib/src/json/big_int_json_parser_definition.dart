@@ -3,6 +3,8 @@ import 'package:petitparser_examples/json.dart';
 
 class BigIntJsonParserDefinition extends JsonGrammarDefinition {
   static BigInt bigIntFromJson(dynamic value) {
+    if (value is BigInt) return value;
+
     if (value is String) {
       return BigInt.parse(value);
     } else if (value is int) {

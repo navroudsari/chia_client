@@ -25,8 +25,8 @@ mixin _$FullBlock {
   FoliageTransactionBlock? get foliageTransactionBlock =>
       throw _privateConstructorUsedError;
   RewardChainBlock get rewardChainBlock => throw _privateConstructorUsedError;
-  VDFProof get rewardChainIpProof => throw _privateConstructorUsedError;
-  VDFProof get rewardChainSpProof => throw _privateConstructorUsedError;
+  VDFProof? get rewardChainIpProof => throw _privateConstructorUsedError;
+  VDFProof? get rewardChainSpProof => throw _privateConstructorUsedError;
   List<EndOfSlotBundle?> get finishedSubSlots =>
       throw _privateConstructorUsedError;
   VDFProof? get infusedChallengeChainIpProof =>
@@ -54,8 +54,8 @@ abstract class $FullBlockCopyWith<$Res> {
       Foliage foliage,
       FoliageTransactionBlock? foliageTransactionBlock,
       RewardChainBlock rewardChainBlock,
-      VDFProof rewardChainIpProof,
-      VDFProof rewardChainSpProof,
+      VDFProof? rewardChainIpProof,
+      VDFProof? rewardChainSpProof,
       List<EndOfSlotBundle?> finishedSubSlots,
       VDFProof? infusedChallengeChainIpProof,
       VDFProof? challengeChainSpProof,
@@ -68,8 +68,8 @@ abstract class $FullBlockCopyWith<$Res> {
   $FoliageCopyWith<$Res> get foliage;
   $FoliageTransactionBlockCopyWith<$Res>? get foliageTransactionBlock;
   $RewardChainBlockCopyWith<$Res> get rewardChainBlock;
-  $VDFProofCopyWith<$Res> get rewardChainIpProof;
-  $VDFProofCopyWith<$Res> get rewardChainSpProof;
+  $VDFProofCopyWith<$Res>? get rewardChainIpProof;
+  $VDFProofCopyWith<$Res>? get rewardChainSpProof;
   $VDFProofCopyWith<$Res>? get infusedChallengeChainIpProof;
   $VDFProofCopyWith<$Res>? get challengeChainSpProof;
   $TransactionsInfoCopyWith<$Res>? get transactionsInfo;
@@ -119,11 +119,11 @@ class _$FullBlockCopyWithImpl<$Res> implements $FullBlockCopyWith<$Res> {
       rewardChainIpProof: rewardChainIpProof == freezed
           ? _value.rewardChainIpProof
           : rewardChainIpProof // ignore: cast_nullable_to_non_nullable
-              as VDFProof,
+              as VDFProof?,
       rewardChainSpProof: rewardChainSpProof == freezed
           ? _value.rewardChainSpProof
           : rewardChainSpProof // ignore: cast_nullable_to_non_nullable
-              as VDFProof,
+              as VDFProof?,
       finishedSubSlots: finishedSubSlots == freezed
           ? _value.finishedSubSlots
           : finishedSubSlots // ignore: cast_nullable_to_non_nullable
@@ -189,15 +189,23 @@ class _$FullBlockCopyWithImpl<$Res> implements $FullBlockCopyWith<$Res> {
   }
 
   @override
-  $VDFProofCopyWith<$Res> get rewardChainIpProof {
-    return $VDFProofCopyWith<$Res>(_value.rewardChainIpProof, (value) {
+  $VDFProofCopyWith<$Res>? get rewardChainIpProof {
+    if (_value.rewardChainIpProof == null) {
+      return null;
+    }
+
+    return $VDFProofCopyWith<$Res>(_value.rewardChainIpProof!, (value) {
       return _then(_value.copyWith(rewardChainIpProof: value));
     });
   }
 
   @override
-  $VDFProofCopyWith<$Res> get rewardChainSpProof {
-    return $VDFProofCopyWith<$Res>(_value.rewardChainSpProof, (value) {
+  $VDFProofCopyWith<$Res>? get rewardChainSpProof {
+    if (_value.rewardChainSpProof == null) {
+      return null;
+    }
+
+    return $VDFProofCopyWith<$Res>(_value.rewardChainSpProof!, (value) {
       return _then(_value.copyWith(rewardChainSpProof: value));
     });
   }
@@ -248,8 +256,8 @@ abstract class _$$_FullBlockCopyWith<$Res> implements $FullBlockCopyWith<$Res> {
       Foliage foliage,
       FoliageTransactionBlock? foliageTransactionBlock,
       RewardChainBlock rewardChainBlock,
-      VDFProof rewardChainIpProof,
-      VDFProof rewardChainSpProof,
+      VDFProof? rewardChainIpProof,
+      VDFProof? rewardChainSpProof,
       List<EndOfSlotBundle?> finishedSubSlots,
       VDFProof? infusedChallengeChainIpProof,
       VDFProof? challengeChainSpProof,
@@ -267,9 +275,9 @@ abstract class _$$_FullBlockCopyWith<$Res> implements $FullBlockCopyWith<$Res> {
   @override
   $RewardChainBlockCopyWith<$Res> get rewardChainBlock;
   @override
-  $VDFProofCopyWith<$Res> get rewardChainIpProof;
+  $VDFProofCopyWith<$Res>? get rewardChainIpProof;
   @override
-  $VDFProofCopyWith<$Res> get rewardChainSpProof;
+  $VDFProofCopyWith<$Res>? get rewardChainSpProof;
   @override
   $VDFProofCopyWith<$Res>? get infusedChallengeChainIpProof;
   @override
@@ -324,11 +332,11 @@ class __$$_FullBlockCopyWithImpl<$Res> extends _$FullBlockCopyWithImpl<$Res>
       rewardChainIpProof: rewardChainIpProof == freezed
           ? _value.rewardChainIpProof
           : rewardChainIpProof // ignore: cast_nullable_to_non_nullable
-              as VDFProof,
+              as VDFProof?,
       rewardChainSpProof: rewardChainSpProof == freezed
           ? _value.rewardChainSpProof
           : rewardChainSpProof // ignore: cast_nullable_to_non_nullable
-              as VDFProof,
+              as VDFProof?,
       finishedSubSlots: finishedSubSlots == freezed
           ? _value._finishedSubSlots
           : finishedSubSlots // ignore: cast_nullable_to_non_nullable
@@ -370,8 +378,8 @@ class _$_FullBlock implements _FullBlock {
       required this.foliage,
       this.foliageTransactionBlock,
       required this.rewardChainBlock,
-      required this.rewardChainIpProof,
-      required this.rewardChainSpProof,
+      this.rewardChainIpProof,
+      this.rewardChainSpProof,
       required final List<EndOfSlotBundle?> finishedSubSlots,
       this.infusedChallengeChainIpProof,
       this.challengeChainSpProof,
@@ -394,9 +402,9 @@ class _$_FullBlock implements _FullBlock {
   @override
   final RewardChainBlock rewardChainBlock;
   @override
-  final VDFProof rewardChainIpProof;
+  final VDFProof? rewardChainIpProof;
   @override
-  final VDFProof rewardChainSpProof;
+  final VDFProof? rewardChainSpProof;
   final List<EndOfSlotBundle?> _finishedSubSlots;
   @override
   List<EndOfSlotBundle?> get finishedSubSlots {
@@ -497,8 +505,8 @@ abstract class _FullBlock implements FullBlock {
       required final Foliage foliage,
       final FoliageTransactionBlock? foliageTransactionBlock,
       required final RewardChainBlock rewardChainBlock,
-      required final VDFProof rewardChainIpProof,
-      required final VDFProof rewardChainSpProof,
+      final VDFProof? rewardChainIpProof,
+      final VDFProof? rewardChainSpProof,
       required final List<EndOfSlotBundle?> finishedSubSlots,
       final VDFProof? infusedChallengeChainIpProof,
       final VDFProof? challengeChainSpProof,
@@ -520,9 +528,9 @@ abstract class _FullBlock implements FullBlock {
   @override
   RewardChainBlock get rewardChainBlock => throw _privateConstructorUsedError;
   @override
-  VDFProof get rewardChainIpProof => throw _privateConstructorUsedError;
+  VDFProof? get rewardChainIpProof => throw _privateConstructorUsedError;
   @override
-  VDFProof get rewardChainSpProof => throw _privateConstructorUsedError;
+  VDFProof? get rewardChainSpProof => throw _privateConstructorUsedError;
   @override
   List<EndOfSlotBundle?> get finishedSubSlots =>
       throw _privateConstructorUsedError;
