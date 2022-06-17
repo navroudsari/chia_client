@@ -24,9 +24,9 @@ mixin _$ChallengeChainSubSlot {
   VDFInfo get challengeChainEndOfSlotVdf => throw _privateConstructorUsedError;
   String? get infusedChallengeChainSubSlotHash =>
       throw _privateConstructorUsedError;
-  String? get newDifficulty => throw _privateConstructorUsedError;
+  int? get newDifficulty => throw _privateConstructorUsedError;
   int? get newSubSlotIters => throw _privateConstructorUsedError;
-  int? get subepochSummaryHash => throw _privateConstructorUsedError;
+  String? get subepochSummaryHash => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -42,9 +42,9 @@ abstract class $ChallengeChainSubSlotCopyWith<$Res> {
   $Res call(
       {VDFInfo challengeChainEndOfSlotVdf,
       String? infusedChallengeChainSubSlotHash,
-      String? newDifficulty,
+      int? newDifficulty,
       int? newSubSlotIters,
-      int? subepochSummaryHash});
+      String? subepochSummaryHash});
 
   $VDFInfoCopyWith<$Res> get challengeChainEndOfSlotVdf;
 }
@@ -79,7 +79,7 @@ class _$ChallengeChainSubSlotCopyWithImpl<$Res>
       newDifficulty: newDifficulty == freezed
           ? _value.newDifficulty
           : newDifficulty // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as int?,
       newSubSlotIters: newSubSlotIters == freezed
           ? _value.newSubSlotIters
           : newSubSlotIters // ignore: cast_nullable_to_non_nullable
@@ -87,7 +87,7 @@ class _$ChallengeChainSubSlotCopyWithImpl<$Res>
       subepochSummaryHash: subepochSummaryHash == freezed
           ? _value.subepochSummaryHash
           : subepochSummaryHash // ignore: cast_nullable_to_non_nullable
-              as int?,
+              as String?,
     ));
   }
 
@@ -109,9 +109,9 @@ abstract class _$$_ChallengeChainSubSlotCopyWith<$Res>
   $Res call(
       {VDFInfo challengeChainEndOfSlotVdf,
       String? infusedChallengeChainSubSlotHash,
-      String? newDifficulty,
+      int? newDifficulty,
       int? newSubSlotIters,
-      int? subepochSummaryHash});
+      String? subepochSummaryHash});
 
   @override
   $VDFInfoCopyWith<$Res> get challengeChainEndOfSlotVdf;
@@ -150,7 +150,7 @@ class __$$_ChallengeChainSubSlotCopyWithImpl<$Res>
       newDifficulty: newDifficulty == freezed
           ? _value.newDifficulty
           : newDifficulty // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as int?,
       newSubSlotIters: newSubSlotIters == freezed
           ? _value.newSubSlotIters
           : newSubSlotIters // ignore: cast_nullable_to_non_nullable
@@ -158,7 +158,7 @@ class __$$_ChallengeChainSubSlotCopyWithImpl<$Res>
       subepochSummaryHash: subepochSummaryHash == freezed
           ? _value.subepochSummaryHash
           : subepochSummaryHash // ignore: cast_nullable_to_non_nullable
-              as int?,
+              as String?,
     ));
   }
 }
@@ -182,11 +182,11 @@ class _$_ChallengeChainSubSlot implements _ChallengeChainSubSlot {
   @override
   final String? infusedChallengeChainSubSlotHash;
   @override
-  final String? newDifficulty;
+  final int? newDifficulty;
   @override
   final int? newSubSlotIters;
   @override
-  final int? subepochSummaryHash;
+  final String? subepochSummaryHash;
 
   @override
   String toString() {
@@ -237,9 +237,9 @@ abstract class _ChallengeChainSubSlot implements ChallengeChainSubSlot {
   const factory _ChallengeChainSubSlot(
       {required final VDFInfo challengeChainEndOfSlotVdf,
       final String? infusedChallengeChainSubSlotHash,
-      final String? newDifficulty,
+      final int? newDifficulty,
       final int? newSubSlotIters,
-      final int? subepochSummaryHash}) = _$_ChallengeChainSubSlot;
+      final String? subepochSummaryHash}) = _$_ChallengeChainSubSlot;
 
   factory _ChallengeChainSubSlot.fromJson(Map<String, dynamic> json) =
       _$_ChallengeChainSubSlot.fromJson;
@@ -250,11 +250,11 @@ abstract class _ChallengeChainSubSlot implements ChallengeChainSubSlot {
   String? get infusedChallengeChainSubSlotHash =>
       throw _privateConstructorUsedError;
   @override
-  String? get newDifficulty => throw _privateConstructorUsedError;
+  int? get newDifficulty => throw _privateConstructorUsedError;
   @override
   int? get newSubSlotIters => throw _privateConstructorUsedError;
   @override
-  int? get subepochSummaryHash => throw _privateConstructorUsedError;
+  String? get subepochSummaryHash => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_ChallengeChainSubSlotCopyWith<_$_ChallengeChainSubSlot> get copyWith =>
