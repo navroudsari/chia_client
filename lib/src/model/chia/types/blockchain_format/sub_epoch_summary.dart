@@ -9,9 +9,9 @@ class SubEpochSummary with _$SubEpochSummary {
   const factory SubEpochSummary({
     required String prevSubepochSummaryHash,
     required String rewardChainHash,
-    required String numBlocksOverflow,
-    String? newDifficulty,
-    String? newSubSlotIters,
+    required int numBlocksOverflow,
+    int? newDifficulty,
+    int? newSubSlotIters,
   }) = _SubEpochSummary;
 
   factory SubEpochSummary.fromJson(Map<String, dynamic> json) =>

@@ -22,9 +22,9 @@ SubEpochSummary _$SubEpochSummaryFromJson(Map<String, dynamic> json) {
 mixin _$SubEpochSummary {
   String get prevSubepochSummaryHash => throw _privateConstructorUsedError;
   String get rewardChainHash => throw _privateConstructorUsedError;
-  String get numBlocksOverflow => throw _privateConstructorUsedError;
-  String? get newDifficulty => throw _privateConstructorUsedError;
-  String? get newSubSlotIters => throw _privateConstructorUsedError;
+  int get numBlocksOverflow => throw _privateConstructorUsedError;
+  int? get newDifficulty => throw _privateConstructorUsedError;
+  int? get newSubSlotIters => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -40,9 +40,9 @@ abstract class $SubEpochSummaryCopyWith<$Res> {
   $Res call(
       {String prevSubepochSummaryHash,
       String rewardChainHash,
-      String numBlocksOverflow,
-      String? newDifficulty,
-      String? newSubSlotIters});
+      int numBlocksOverflow,
+      int? newDifficulty,
+      int? newSubSlotIters});
 }
 
 /// @nodoc
@@ -74,15 +74,15 @@ class _$SubEpochSummaryCopyWithImpl<$Res>
       numBlocksOverflow: numBlocksOverflow == freezed
           ? _value.numBlocksOverflow
           : numBlocksOverflow // ignore: cast_nullable_to_non_nullable
-              as String,
+              as int,
       newDifficulty: newDifficulty == freezed
           ? _value.newDifficulty
           : newDifficulty // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as int?,
       newSubSlotIters: newSubSlotIters == freezed
           ? _value.newSubSlotIters
           : newSubSlotIters // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as int?,
     ));
   }
 }
@@ -97,9 +97,9 @@ abstract class _$$_SubEpochSummaryCopyWith<$Res>
   $Res call(
       {String prevSubepochSummaryHash,
       String rewardChainHash,
-      String numBlocksOverflow,
-      String? newDifficulty,
-      String? newSubSlotIters});
+      int numBlocksOverflow,
+      int? newDifficulty,
+      int? newSubSlotIters});
 }
 
 /// @nodoc
@@ -133,15 +133,15 @@ class __$$_SubEpochSummaryCopyWithImpl<$Res>
       numBlocksOverflow: numBlocksOverflow == freezed
           ? _value.numBlocksOverflow
           : numBlocksOverflow // ignore: cast_nullable_to_non_nullable
-              as String,
+              as int,
       newDifficulty: newDifficulty == freezed
           ? _value.newDifficulty
           : newDifficulty // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as int?,
       newSubSlotIters: newSubSlotIters == freezed
           ? _value.newSubSlotIters
           : newSubSlotIters // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as int?,
     ));
   }
 }
@@ -165,11 +165,11 @@ class _$_SubEpochSummary implements _SubEpochSummary {
   @override
   final String rewardChainHash;
   @override
-  final String numBlocksOverflow;
+  final int numBlocksOverflow;
   @override
-  final String? newDifficulty;
+  final int? newDifficulty;
   @override
-  final String? newSubSlotIters;
+  final int? newSubSlotIters;
 
   @override
   String toString() {
@@ -218,9 +218,9 @@ abstract class _SubEpochSummary implements SubEpochSummary {
   const factory _SubEpochSummary(
       {required final String prevSubepochSummaryHash,
       required final String rewardChainHash,
-      required final String numBlocksOverflow,
-      final String? newDifficulty,
-      final String? newSubSlotIters}) = _$_SubEpochSummary;
+      required final int numBlocksOverflow,
+      final int? newDifficulty,
+      final int? newSubSlotIters}) = _$_SubEpochSummary;
 
   factory _SubEpochSummary.fromJson(Map<String, dynamic> json) =
       _$_SubEpochSummary.fromJson;
@@ -230,11 +230,11 @@ abstract class _SubEpochSummary implements SubEpochSummary {
   @override
   String get rewardChainHash => throw _privateConstructorUsedError;
   @override
-  String get numBlocksOverflow => throw _privateConstructorUsedError;
+  int get numBlocksOverflow => throw _privateConstructorUsedError;
   @override
-  String? get newDifficulty => throw _privateConstructorUsedError;
+  int? get newDifficulty => throw _privateConstructorUsedError;
   @override
-  String? get newSubSlotIters => throw _privateConstructorUsedError;
+  int? get newSubSlotIters => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_SubEpochSummaryCopyWith<_$_SubEpochSummary> get copyWith =>

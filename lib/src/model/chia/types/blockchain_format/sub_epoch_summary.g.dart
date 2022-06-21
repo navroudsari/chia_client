@@ -10,9 +10,9 @@ _$_SubEpochSummary _$$_SubEpochSummaryFromJson(Map<String, dynamic> json) =>
     _$_SubEpochSummary(
       prevSubepochSummaryHash: json['prev_subepoch_summary_hash'] as String,
       rewardChainHash: json['reward_chain_hash'] as String,
-      numBlocksOverflow: json['num_blocks_overflow'] as String,
-      newDifficulty: json['new_difficulty'] as String?,
-      newSubSlotIters: json['new_sub_slot_iters'] as String?,
+      numBlocksOverflow: json['num_blocks_overflow'] as int,
+      newDifficulty: json['new_difficulty'] as int?,
+      newSubSlotIters: json['new_sub_slot_iters'] as int?,
     );
 
 Map<String, dynamic> _$$_SubEpochSummaryToJson(_$_SubEpochSummary instance) =>
