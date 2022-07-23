@@ -29,7 +29,7 @@ void main() {
           genesisChallengeInitialized: true,
           mempoolSize: 0,
           mempoolCost: 0,
-          mempoolMinFees: const MempoolMinFees(cost5000000: 0),
+          mempoolMinFees: MempoolMinFees(cost5000000: BigInt.zero),
           mempoolMaxTotalCost: 110000000000,
           blockMaxCost: 11000000000,
           space: BigInt.parse('379227806719865'),

@@ -86,10 +86,11 @@ Map<String, dynamic> _$$_SyncToJson(_$_Sync instance) => <String, dynamic>{
 
 _$_MempoolMinFees _$$_MempoolMinFeesFromJson(Map<String, dynamic> json) =>
     _$_MempoolMinFees(
-      cost5000000: json['cost_5000000'] as int,
+      cost5000000:
+          BigIntJsonParserDefinition.bigIntFromJson(json['cost_5000000']),
     );
 
 Map<String, dynamic> _$$_MempoolMinFeesToJson(_$_MempoolMinFees instance) =>
     <String, dynamic>{
-      'cost_5000000': instance.cost5000000,
+      'cost_5000000': instance.cost5000000.toString(),
     };

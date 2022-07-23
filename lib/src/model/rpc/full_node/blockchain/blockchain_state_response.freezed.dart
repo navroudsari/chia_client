@@ -835,8 +835,9 @@ MempoolMinFees _$MempoolMinFeesFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$MempoolMinFees {
-  @JsonKey(name: 'cost_5000000')
-  int get cost5000000 => throw _privateConstructorUsedError;
+  @JsonKey(
+      name: 'cost_5000000', fromJson: BigIntJsonParserDefinition.bigIntFromJson)
+  BigInt get cost5000000 => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -849,7 +850,9 @@ abstract class $MempoolMinFeesCopyWith<$Res> {
   factory $MempoolMinFeesCopyWith(
           MempoolMinFees value, $Res Function(MempoolMinFees) then) =
       _$MempoolMinFeesCopyWithImpl<$Res>;
-  $Res call({@JsonKey(name: 'cost_5000000') int cost5000000});
+  $Res call(
+      {@JsonKey(name: 'cost_5000000', fromJson: BigIntJsonParserDefinition.bigIntFromJson)
+          BigInt cost5000000});
 }
 
 /// @nodoc
@@ -869,7 +872,7 @@ class _$MempoolMinFeesCopyWithImpl<$Res>
       cost5000000: cost5000000 == freezed
           ? _value.cost5000000
           : cost5000000 // ignore: cast_nullable_to_non_nullable
-              as int,
+              as BigInt,
     ));
   }
 }
@@ -881,7 +884,9 @@ abstract class _$$_MempoolMinFeesCopyWith<$Res>
           _$_MempoolMinFees value, $Res Function(_$_MempoolMinFees) then) =
       __$$_MempoolMinFeesCopyWithImpl<$Res>;
   @override
-  $Res call({@JsonKey(name: 'cost_5000000') int cost5000000});
+  $Res call(
+      {@JsonKey(name: 'cost_5000000', fromJson: BigIntJsonParserDefinition.bigIntFromJson)
+          BigInt cost5000000});
 }
 
 /// @nodoc
@@ -903,7 +908,7 @@ class __$$_MempoolMinFeesCopyWithImpl<$Res>
       cost5000000: cost5000000 == freezed
           ? _value.cost5000000
           : cost5000000 // ignore: cast_nullable_to_non_nullable
-              as int,
+              as BigInt,
     ));
   }
 }
@@ -913,14 +918,16 @@ class __$$_MempoolMinFeesCopyWithImpl<$Res>
 @JsonSerializable(explicitToJson: true, fieldRename: FieldRename.snake)
 class _$_MempoolMinFees implements _MempoolMinFees {
   const _$_MempoolMinFees(
-      {@JsonKey(name: 'cost_5000000') required this.cost5000000});
+      {@JsonKey(name: 'cost_5000000', fromJson: BigIntJsonParserDefinition.bigIntFromJson)
+          required this.cost5000000});
 
   factory _$_MempoolMinFees.fromJson(Map<String, dynamic> json) =>
       _$$_MempoolMinFeesFromJson(json);
 
   @override
-  @JsonKey(name: 'cost_5000000')
-  final int cost5000000;
+  @JsonKey(
+      name: 'cost_5000000', fromJson: BigIntJsonParserDefinition.bigIntFromJson)
+  final BigInt cost5000000;
 
   @override
   String toString() {
@@ -954,15 +961,16 @@ class _$_MempoolMinFees implements _MempoolMinFees {
 
 abstract class _MempoolMinFees implements MempoolMinFees {
   const factory _MempoolMinFees(
-          {@JsonKey(name: 'cost_5000000') required final int cost5000000}) =
-      _$_MempoolMinFees;
+      {@JsonKey(name: 'cost_5000000', fromJson: BigIntJsonParserDefinition.bigIntFromJson)
+          required final BigInt cost5000000}) = _$_MempoolMinFees;
 
   factory _MempoolMinFees.fromJson(Map<String, dynamic> json) =
       _$_MempoolMinFees.fromJson;
 
   @override
-  @JsonKey(name: 'cost_5000000')
-  int get cost5000000 => throw _privateConstructorUsedError;
+  @JsonKey(
+      name: 'cost_5000000', fromJson: BigIntJsonParserDefinition.bigIntFromJson)
+  BigInt get cost5000000 => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_MempoolMinFeesCopyWith<_$_MempoolMinFees> get copyWith =>

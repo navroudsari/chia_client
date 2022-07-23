@@ -9,6 +9,8 @@ class BigIntJsonParserDefinition extends JsonGrammarDefinition {
       return BigInt.parse(value);
     } else if (value is int) {
       return BigInt.from(value);
+    } else if (value is double) {
+      return BigInt.from(value);
     } else {
       throw FormatException('could not convert $value to BigInt');
     }

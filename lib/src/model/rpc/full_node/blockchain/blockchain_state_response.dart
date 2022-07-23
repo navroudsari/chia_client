@@ -60,7 +60,8 @@ class Sync with _$Sync {
 class MempoolMinFees with _$MempoolMinFees {
   @JsonSerializable(explicitToJson: true, fieldRename: FieldRename.snake)
   const factory MempoolMinFees({
-    @JsonKey(name: 'cost_5000000') required int cost5000000,
+    @JsonKey(name: 'cost_5000000', fromJson: BigIntJsonParserDefinition.bigIntFromJson)
+        required BigInt cost5000000,
   }) = _MempoolMinFees;
 
   factory MempoolMinFees.fromJson(Map<String, dynamic> json) =>
